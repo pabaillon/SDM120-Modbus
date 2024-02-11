@@ -103,8 +103,8 @@ class BasePlugin:
                  Export_Wh = self.rs485.read_float(74, 4, 2)
                  Total_kwh = self.rs485.read_float(342, 4, 2)
                  Voltage = self.rs485.read_float(256, 2, 2)
-                 Import_power = self.rs485.read_float(88, 4, 2)
-                 Export_power = self.rs485.read_float(92, 4, 2)
+                 Import_power = self.rs485.read_float(258, 2, 2)
+                 Export_power = self.rs485.read_float(266, 1, 2)
                  #self.rs485.read_float(register, functioncode, numberOfRegisters)
                  self.rs485.serial.close()  #  Close that door !
             except:
