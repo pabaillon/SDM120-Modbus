@@ -89,7 +89,7 @@ class BasePlugin:
                  #class minimalmodbus.Instrument(port: str, slaveaddress: int, mode: str = 'rtu', close_port_after_each_call: bool = False, debug: bool = False)
                  self.rs485.serial.baudrate = Parameters["Mode1"]
                  self.rs485.serial.bytesize = 8
-                 self.rs485.serial.parity = minimalmodbus.serial.PARITY_NONE
+                 self.rs485.serial.parity = minimalmodbus.serial.PARITY_EVEN
                  self.rs485.serial.stopbits = 1
                  self.rs485.serial.timeout = 1
                  self.rs485.serial.exclusive = True # Fix From Forum Member 'lost'
